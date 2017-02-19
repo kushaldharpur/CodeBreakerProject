@@ -39,10 +39,12 @@ function validateInput(l) {
 }
 
 function getResults(input) {
+    let count = 0;
     let htmltag = '<div class="row"><span class="col-md-6">' + input + '</span><div class="col-md-6">';
     for (i = 0; i < input.length; i++) {
         if (input.charAt(i) == answer.value.charAt(i)) {
             htmltag += '<span class="glyphicon glyphicon-ok"></span>';
+            count++;
         } else if (answer.value.indexOf(input.charAt(i)) > -1) {
             htmltag += '<span class="glyphicon glyphicon-transfer"></span>';
         } else {
@@ -51,5 +53,8 @@ function getResults(input) {
     }
     htmltag += '</div></div>';
     document.getElementById('results').innerHTML += htmltag;
-
+    if (count == 4) {
+        return true;
+    }
+    return false;
 }
