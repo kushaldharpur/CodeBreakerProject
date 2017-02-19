@@ -14,4 +14,5 @@ function setHiddenFields() {
         answer.value = "0" + answer.value;
         k++;
     }
+    attempt = 0;
 }
