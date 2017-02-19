@@ -22,7 +22,7 @@ function guess() {
         showAnswer(false);
         showReplay();
     } else {
-        setMessage("Incorrect, Try Again.");
+        setMessage("Incorrect, Try Again!");
     }
 
 }
