@@ -43,12 +43,13 @@ function getResults(input) {
     for (i = 0; i < input.value.length < 4; i++) {
         if (input.charAt(i) == answer.value.charAt(i)) {
             htmltag += '<span class="glyphicon glyphicon-ok"></span>';
-        } else if (input.value > ) {
+        } else if (answer.value.indexOf(input.charAt(i)) > -1) {
             htmltag += '<span class="glyphicon glyphicon-transfer"></span>';
         } else {
             htmltag += '<span class="glyphicon glyphicon-remove"></span>';
         }
     }
     htmltag += '</div></div>';
+    document.getElementById('result').innerHTML += htmltag;
 
 }
