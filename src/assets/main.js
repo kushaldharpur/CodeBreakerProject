@@ -9,9 +9,8 @@ function guess() {
     }
     if (!validateInput(input.value)) {
         return false;
-    } else {
-        attempt.value += 1;
     }
+    attempt.value += 1;
 
     if (getResults(input.value)) {
         setMessage("You Win! :)");
@@ -66,7 +65,7 @@ function getResults(input) {
     }
     htmltag += '</div></div>';
     document.getElementById('results').innerHTML += htmltag;
-    if (count == 4) {
+    if (count == answer.value) {
         return true;
     }
     return false;
