@@ -7,7 +7,7 @@ function guess() {
     if (!validateInput(input.value)) {
         return false;
     } else {
-        attempt.value++;
+        attempt.value += 1;
     }
 }
 //implement new functions here
@@ -19,7 +19,7 @@ function setHiddenFields() {
         answer.value = "0" + answer.value;
         k++;
     }
-    attempt = 0;
+    attempt.value = 0;
 }
 
 function setMessage(msg) {
