@@ -18,7 +18,7 @@ function guess() {
     } else {
         if (attempt.value < 10) {
             setMessage("Incorrect, try again.");
-        } else if (attemt.value >= 10) {
+        } else if (attempt.value >= 10) {
             setMessage("You Lose! :(");
         }
     }
