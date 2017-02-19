@@ -67,3 +67,13 @@ function getResults(input) {
     }
     return false;
 }
+
+function showAnswer(tof) {
+    let code = document.getElementById("code");
+    if (tof) {
+        code.className += ' success';
+    } else {
+        code.className += ' failure';
+    }
+    code.innerHTML = answer.value;
+}
