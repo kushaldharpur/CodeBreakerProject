@@ -16,3 +16,7 @@ function setHiddenFields() {
     }
     attempt = 0;
 }
+
+function setMessage(msg) {
+    document.getElementById("message").innerHTML = msg;
+}
