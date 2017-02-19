@@ -50,6 +50,6 @@ function getResults(input) {
         }
     }
     htmltag += '</div></div>';
-    document.getElementById('result').innerHTML += htmltag;
+    document.getElementById('results').innerHTML += htmltag;
 
 }
