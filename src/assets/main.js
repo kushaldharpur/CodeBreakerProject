@@ -65,7 +65,7 @@ function getResults(input) {
     }
     htmltag += '</div></div>';
     document.getElementById('results').innerHTML += htmltag;
-    if (count == answer.value) {
+    if (input == answer.value) {
         return true;
     }
     return false;
